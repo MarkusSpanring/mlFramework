@@ -125,8 +125,8 @@
 				"_CMS_scale_j_RelativeBal_Run2016":   "jecUncRelativeBal",
 				"_CMS_scale_met_clustered":   "metJetEn",
 				"_CMS_scale_met_unclustered": "metUnclusteredEn",
-				"_CMS_htt_boson_reso_met": "metRecoilResolution",
-				"_CMS_htt_boson_scale_met": "metRecoilResponse"				
+				"_CMS_htt_boson_reso_met_Run2016": "metRecoilResolution",
+				"_CMS_htt_boson_scale_met_Run2016": "metRecoilResponse"				
 			},
 			"channel_shapes":
 			{	"mt":{},
@@ -152,8 +152,8 @@
 				"_CMS_scale_j_RelativeBal_Run2016":   "jecUncRelativeBal",
 				"_CMS_scale_met_clustered":   "metJetEn",
 				"_CMS_scale_met_unclustered": "metUnclusteredEn",
-				"_CMS_htt_boson_reso_met": "metRecoilResolution",
-				"_CMS_htt_boson_scale_met": "metRecoilResponse"				
+				"_CMS_htt_boson_reso_met_Run2016": "metRecoilResolution",
+				"_CMS_htt_boson_scale_met_Run2016": "metRecoilResponse"				
 			},
 			"channel_shapes":
 			{	"mt":{},
@@ -179,8 +179,8 @@
 				"_CMS_scale_j_RelativeBal_Run2016":   "jecUncRelativeBal",
 				"_CMS_scale_met_clustered":   "metJetEn",
 				"_CMS_scale_met_unclustered": "metUnclusteredEn",
-				"_CMS_htt_boson_reso_met": "metRecoilResolution",
-				"_CMS_htt_boson_scale_met": "metRecoilResponse"				
+				"_CMS_htt_boson_reso_met_Run2016": "metRecoilResolution",
+				"_CMS_htt_boson_scale_met_Run2016": "metRecoilResponse"				
 			},
 			"channel_shapes":
 			{	"mt":{},
@@ -206,8 +206,8 @@
 				"_CMS_scale_j_RelativeBal_Run2016":   "jecUncRelativeBal",
 				"_CMS_scale_met_clustered":   "metJetEn",
 				"_CMS_scale_met_unclustered": "metUnclusteredEn",
-				"_CMS_htt_boson_reso_met": "metRecoilResolution",
-				"_CMS_htt_boson_scale_met": "metRecoilResponse"				
+				"_CMS_htt_boson_reso_met_Run2016": "metRecoilResolution",
+				"_CMS_htt_boson_scale_met_Run2016": "metRecoilResponse"				
 			},
 			"channel_shapes":
 			{	"mt":{},
