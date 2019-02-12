@@ -20,6 +20,7 @@ gghweight = Weight( "ggh_NNLO_weight", ["ggh_NNLO_weight"] )
 
 prefire =   Weight(" (0.972+0.011*(jpt_1>0)*(jpt_1<200)*(njets<2 | ((jdeta<2.8 | mjj<400) & (mjj<60 | mjj>=120)))-0.52*(jpt_1>=200)) ",["jpt_1","njets","jdeta","mjj"])
 
+bbH_correction = Weight("1.01",[])
 
 signals_ggh = ["ggH125",
            "ggH_VBFTOPO_JET3VETO125",
@@ -51,7 +52,7 @@ config = {
             "W":      lumi + weight + tauidsft,
             "TT":     lumi + weight + tauidsft + topweight,
             "VV":     lumi + weight + tauidsft,
-            "ggH125": lumikit + weight + gghweight + tauidsft,
+            "ggH125": lumikit + weight + gghweight + tauidsft + bbH_correction,
             "qqH125": lumikit + weight + tauidsft + prefire,
             "WH125":  lumikit + weight + tauidsft,
             "ZH125":  lumikit + weight + tauidsft 
@@ -62,7 +63,7 @@ config = {
             "W":      lumi + weight + tauidsft,
             "TT":     lumi + weight + tauidsft + topweight,
             "VV":     lumi + weight + tauidsft,
-            "ggH125": lumikit + weight + gghweight + tauidsft,
+            "ggH125": lumikit + weight + gghweight + tauidsft + bbH_correction,
             "qqH125": lumikit + weight + tauidsft + prefire,
             "WH125":  lumikit + weight + tauidsft,
             "ZH125":  lumikit + weight + tauidsft       
@@ -73,7 +74,7 @@ config = {
             "W":      lumi + weight + tauidsft,
             "TT":     lumi + weight + tauidsft + topweight,
             "VV":     lumi + weight + tauidsft,
-            "ggH125": lumikit + weight + gghweight + tauidsft,
+            "ggH125": lumikit + weight + gghweight + tauidsft + bbH_correction,
             "qqH125": lumikit + weight + tauidsft + prefire,
             "WH125":  lumikit + weight + tauidsft,
             "ZH125":  lumikit + weight + tauidsft        

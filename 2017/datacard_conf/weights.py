@@ -18,7 +18,7 @@ topweight = Weight("topPtReweightWeightRun1", ["topPtReweightWeightRun1"])
 prefire = Weight( "( ( 0.95+0.02*( (jpt_1>0 & jpt_1<200) & (njets<2 | ( (jdeta<2.8 | mjj<400 ) & (mjj<60 | mjj>=120 ) ) ) ) - 0.1*(jpt_1>=200) ) ) ", ["jpt_1","njets","jdeta","mjj"] )
 ggh_nnlo = Weight("NNLO_ggH_weight",["NNLO_ggH_weight"])
 
-
+bbH_correction = Weight("1.01",[])
 
 signals_ggh = ["ggH125",
            "ggH_VBFTOPO_JET3VETO125",
@@ -45,35 +45,35 @@ config = {
 
     "template_weight":{
         "mt":{
-            "Z":      lumi  * weight * semilep * tauidsft_2 * zptweight,
-            "W":      lumi  * weight * semilep * tauidsft_2,
+            "Z":      lumi * weight * semilep * tauidsft_2 * zptweight,
+            "W":      lumi * weight * semilep * tauidsft_2,
             "TT":     lumi * weight * semilep * tauidsft_2 * topweight,
             "VV":     lumi * weight * semilep * tauidsft_2,
             "EMB":    weight,
-            "ggH125": lumi * weight * semilep * tauidsft_2 * ggh_nnlo,
+            "ggH125": lumi * weight * semilep * tauidsft_2 * ggh_nnlo + bbH_correction,
             "qqH125": lumi * weight * semilep * tauidsft_2 * prefire,
             "WH125":  lumi * weight * semilep * tauidsft_2,
             "ZH125":  lumi * weight * semilep * tauidsft_2 
         },
         "et":{
             # "Z":      lumi * kit_dy_stitching * weight * zvtx_electron * semilep * tauidsft_2 * zptweight,
-            "Z":      lumi  * weight * zvtx_electron * semilep * tauidsft_2 * zptweight,
-            "W":      lumi  * weight * zvtx_electron * semilep * tauidsft_2,
+            "Z":      lumi * weight * zvtx_electron * semilep * tauidsft_2 * zptweight,
+            "W":      lumi * weight * zvtx_electron * semilep * tauidsft_2,
             "TT":     lumi * weight * zvtx_electron * semilep * tauidsft_2 * topweight,
             "VV":     lumi * weight * zvtx_electron * semilep * tauidsft_2,
             "EMB":    weight,
-            "ggH125": lumi * weight * zvtx_electron * semilep * tauidsft_2 + ggh_nnlo,
+            "ggH125": lumi * weight * zvtx_electron * semilep * tauidsft_2 + ggh_nnlo + bbH_correction,
             "qqH125": lumi * weight * zvtx_electron * semilep * tauidsft_2 * prefire,
             "WH125":  lumi * weight * zvtx_electron *semilep * tauidsft_2,
             "ZH125":  lumi * weight * zvtx_electron * semilep * tauidsft_2 
         },
         "tt":{
-            "Z":      lumi  * weight * had * tauidsft * zptweight,
-            "W":      lumi  * weight * had * tauidsft,
+            "Z":      lumi * weight * had * tauidsft * zptweight,
+            "W":      lumi * weight * had * tauidsft,
             "TT":     lumi * weight * had * tauidsft * topweight,
             "VV":     lumi * weight * had * tauidsft,
             "EMB":    weight,
-            "ggH125": lumi * weight * had * tauidsft + ggh_nnlo,
+            "ggH125": lumi * weight * had * tauidsft + ggh_nnlo + bbH_correction,
             "qqH125": lumi * weight * had * tauidsft * prefire,
             "WH125":  lumi * weight * had * tauidsft,
             "ZH125":  lumi * weight * had * tauidsft
