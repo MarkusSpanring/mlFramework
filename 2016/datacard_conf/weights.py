@@ -39,7 +39,7 @@ signals_qqh = ["qqH125",
                 "qqH_VBFTOPO_JET3VETO125", "qqH_VBFTOPO_JET3125", "qqH_REST125",
                 "qqH_PTJET1_GT200125", "qqH_VH2JET125"]
 
-signals_VH = ["WH125","ZH125"]
+signals_VH = ["WH125","ZH125","ttH125"]
 
 signals = signals_ggh + signals_qqh + signals_VH
 
@@ -55,6 +55,7 @@ config = {
             "ggH125": lumikit + weight + gghweight + tauidsft + bbH_correction,
             "qqH125": lumikit + weight + tauidsft + prefire,
             "WH125":  lumikit + weight + tauidsft,
+            "ttH125":  lumikit + weight + tauidsft,
             "ZH125":  lumikit + weight + tauidsft 
         },
         "et":{
@@ -66,6 +67,7 @@ config = {
             "ggH125": lumikit + weight + gghweight + tauidsft + bbH_correction,
             "qqH125": lumikit + weight + tauidsft + prefire,
             "WH125":  lumikit + weight + tauidsft,
+            "ttH125":  lumikit + weight + tauidsft,
             "ZH125":  lumikit + weight + tauidsft       
         },
         "tt":{
@@ -77,6 +79,7 @@ config = {
             "ggH125": lumikit + weight + gghweight + tauidsft + bbH_correction,
             "qqH125": lumikit + weight + tauidsft + prefire,
             "WH125":  lumikit + weight + tauidsft,
+            "ttH125":  lumikit + weight + tauidsft,
             "ZH125":  lumikit + weight + tauidsft        
         }
     },

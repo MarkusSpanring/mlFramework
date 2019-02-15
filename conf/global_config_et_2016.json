@@ -233,6 +233,12 @@
             "select": "-VETO- && -MT- && -TRIG-", 
             "name": "NOMINAL_ntuple_ZH", 
             "event_weight": 1.0
+        },
+        "ttH125_full": {
+            "target":"none",
+            "select": "-VETO- && -MT- && -TRIG-", 
+            "name": "NOMINAL_ntuple_ttH", 
+            "event_weight": 1.0
         }, 
         "data": {
             "target":"none",

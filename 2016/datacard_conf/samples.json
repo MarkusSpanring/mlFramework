@@ -217,6 +217,33 @@
 				"tt":{}
 			},
 			"shape_from_tree":{}
+		},
+		"ttH125":{
+			"nominal":"{channel}-NOMINAL_ntuple_ttH125.root",
+			"type":"mc",
+			"shape_from_file":{
+				"_CMS_scale_t_1prong_Run2016":  		     "T0",
+				"_CMS_scale_t_1prong1pizero_Run2016":      "T1",
+				"_CMS_scale_t_3prong_Run2016":  		     "T10",
+				"_CMS_htt_eff_b_Run2016":             "btagEff",
+				"_CMS_htt_mistag_b_Run2016":          "btagMistag",
+				"_CMS_scale_j_eta0to3_Run2016":       "jecUncEta0to3",
+				"_CMS_scale_j_eta0to5_Run2016":       "jecUncEta0to5",
+				"_CMS_scale_j_eta3to5_Run2016":       "jecUncEta3to5",
+				"_CMS_scale_j_RelativeBal_Run2016":   "jecUncRelativeBal",
+				"_CMS_scale_met_clustered":   "metJetEn",
+				"_CMS_scale_met_unclustered": "metUnclusteredEn",
+				"_CMS_htt_boson_reso_met_Run2016": "metRecoilResolution",
+				"_CMS_htt_boson_scale_met_Run2016": "metRecoilResponse"				
+			},
+			"channel_shapes":
+			{	"mt":{},
+				"et":{
+					"_CMS_scale_e_Run2016":					 "EES"
+				},
+				"tt":{}
+			},
+			"shape_from_tree":{}
 		},				
 		"data_obs":{
 			"nominal":"{channel}-NOMINAL_ntuple_Data.root",
